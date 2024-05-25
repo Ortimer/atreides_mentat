@@ -5,6 +5,7 @@ export interface PageProps {
   header?: JSX.Element | string;
   buttons?: ReadonlyArray<JSX.Element> | JSX.Element;
   isFull?: boolean;
+  children: React.ReactNode;
 }
 
 const Modal: React.FC<PageProps> = props => {
