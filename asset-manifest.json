@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/atreides_mentat/static/css/main.7594c2ae.css",
+    "main.js": "/atreides_mentat/static/js/main.af6ae5f1.js",
+    "static/media/fa-solid-900.ttf": "/atreides_mentat/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/fa-brands-400.ttf": "/atreides_mentat/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/atreides_mentat/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/tleilaxu.png": "/atreides_mentat/static/media/tleilaxu.f469075bd055531c4c87.png",
+    "static/media/fa-brands-400.woff2": "/atreides_mentat/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/ixians.png": "/atreides_mentat/static/media/ixians.1bb1447987307acad0fe.png",
+    "static/media/fa-regular-400.ttf": "/atreides_mentat/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "service-worker.js": "/atreides_mentat/service-worker.js",
+    "static/media/fa-regular-400.woff2": "/atreides_mentat/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/artillery.svg": "/atreides_mentat/static/media/artillery.aba82efbf08ea21684c4f5b206bf66e1.svg",
+    "static/media/harkonnen.svg": "/atreides_mentat/static/media/harkonnen.524ca4a56c4df7ccf1621bee8d55914c.svg",
+    "static/media/fa-v4compatibility.ttf": "/atreides_mentat/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/atreides_mentat/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "static/media/emperor.svg": "/atreides_mentat/static/media/emperor.814a393d1c67c0baecbbc597f8ba58eb.svg",
+    "static/media/bene_gesserit.svg": "/atreides_mentat/static/media/bene_gesserit.349e6dd708c3faa8f32d01beaf7cb58a.svg",
+    "static/media/fremen.svg": "/atreides_mentat/static/media/fremen.feb2519effa6033749ac4fa5d5a557f8.svg",
+    "static/media/spacing_guild.svg": "/atreides_mentat/static/media/spacing_guild.e100d3b20e5793d80a43e884631e8093.svg",
+    "static/media/snooper.svg": "/atreides_mentat/static/media/snooper.7a1c51042e2b37203b1aeb288db04da5.svg",
+    "static/media/atreides.svg": "/atreides_mentat/static/media/atreides.fc67576aae96500dfc8ea90f3d8644d2.svg",
+    "static/media/guitar.svg": "/atreides_mentat/static/media/guitar.fdce6b6ca69bf70d4cf27cf0ab3f28a0.svg",
+    "static/media/unknown.svg": "/atreides_mentat/static/media/unknown.59b188ada024710b38e3114feb658492.svg",
+    "static/media/laser.svg": "/atreides_mentat/static/media/laser.be58a41452c7fdd6ff704f8c1cb3a6d0.svg",
+    "static/media/shield.svg": "/atreides_mentat/static/media/shield.784cd813bea0634620659e7e8310c893.svg",
+    "static/media/halt.svg": "/atreides_mentat/static/media/halt.de49eebea3966b5b1469c2c0ae5b99f3.svg",
+    "index.html": "/atreides_mentat/index.html",
+    "static/media/crosshair.svg": "/atreides_mentat/static/media/crosshair.c1a3ce1ebbf6888a8b74c69bcbaaa7bc.svg",
+    "static/media/poison_drop.svg": "/atreides_mentat/static/media/poison_drop.c66cd34d65d9fe2cbd395ca24fb37ad0.svg",
+    "main.7594c2ae.css.map": "/atreides_mentat/static/css/main.7594c2ae.css.map",
+    "main.af6ae5f1.js.map": "/atreides_mentat/static/js/main.af6ae5f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7594c2ae.css",
+    "static/js/main.af6ae5f1.js"
+  ]
+}
