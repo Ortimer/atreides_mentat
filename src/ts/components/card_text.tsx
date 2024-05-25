@@ -20,7 +20,8 @@ export const card_subheading = {
   "Weirding Way": <p className="heading">Unique Projectile Weapon/Defense</p>,
   "Chemistry": <p className="heading">Unique Poison Weapon/Defense</p>,
   "Poison Blade": <p className="heading">Projectile & Poison</p>,
-  "Shield Snooper": <p className="heading">Projectile & Poison</p>
+  "Shield Snooper": <p className="heading">Projectile & Poison</p>,
+  Richese: <p className="heading">Richese technology</p>
 } as const;
 
 const card_text = {
@@ -272,6 +273,69 @@ const card_text = {
         You must have at least 3 forces in the reserve to use this card.
       </p>
       {DiscardAfterUse}
+    </>
+  ),
+  "Juice of Sappho": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Distrans": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Nullentropy Box": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Ornithopter": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Residual Poison": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Semuta Drug": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Portable Snooper": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Stone Burner": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </>
+  ),
+  "Mirror Weapon": (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
     </>
   )
 } as const;

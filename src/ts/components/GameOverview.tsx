@@ -34,7 +34,8 @@ const GameOverview: React.FC = () => {
       const draw_deck = state.game.current.decks[state.game.current.draw_deck_index];
       return {
         deck_tracking: state.game.deck_tracking,
-        include_expansion_cards: state.game.include_ixians_expansion_cards,
+        include_ixians_expansion_cards: state.game.include_ixians_expansion_cards,
+        include_ecaz_expansion_cards: state.game.include_ecaz_expansion_cards,
         houses: state.game.current.houses,
         view: state.view,
         draw_deck,

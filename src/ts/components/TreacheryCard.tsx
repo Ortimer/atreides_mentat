@@ -10,6 +10,7 @@ import { ReactComponent as PoisonDropIcon } from "assets/cards/poison_drop.svg";
 import { ReactComponent as ShieldIcon } from "assets/cards/shield.svg";
 import { ReactComponent as UnknownIcon } from "assets/cards/unknown.svg";
 import { ReactComponent as ArtilleryIcon } from "assets/cards/artillery.svg";
+import { ReactComponent as RicheseIcon } from "assets/cards/richese.svg";
 
 import card_text, { card_subheading } from "ts/components/card_text";
 
@@ -19,7 +20,8 @@ export const treachery_card_colours = {
   Special: { text: "white", bg: "grey" },
   Useless: { text: "black", bg: "warning" },
   Unknown: { text: "white", bg: "dark" },
-  "Weapon/Defense": { text: "white", bg: "success" }
+  "Weapon/Defense": { text: "white", bg: "success" },
+  Richese: { text: "black", bg: "grey-light" },
 } as const;
 
 export const treachery_card_icons = {
@@ -36,7 +38,8 @@ export const treachery_card_icons = {
   "Weirding Way": (width?: number) => <CrosshairIcon width={width ? width : 32} />,
   Chemistry: (width?: number) => <SnooperIcon width={width ? width : 32} />,
   "Poison Blade": (width?: number) => <CrosshairIcon width={width ? width : 32} />,
-  "Shield Snooper": (width?: number) => <ShieldIcon width={width ? width : 32} />
+  "Shield Snooper": (width?: number) => <ShieldIcon width={width ? width : 32} />,
+  Richese: (width?: number) => <RicheseIcon width={width ? width : 32} />,
 } as const;
 
 export const treachery_card_extra_icons = {
@@ -90,6 +93,13 @@ const TreacheryCard: React.FC<{
     case "Weapon/Defense": {
       subheading = card_subheading[card.type];
       icon = treachery_card_icons[card.type]();
+      text = card_text[card.type];
+      title = card.id;
+      break;
+    }
+    case "Richese": {
+      subheading = card_subheading[card.kind];
+      icon = treachery_card_icons[card.kind]();
       text = card_text[card.type];
       title = card.id;
       break;

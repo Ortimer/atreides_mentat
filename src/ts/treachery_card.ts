@@ -48,11 +48,27 @@ export interface special_card {
   | "Reinforcements";
 }
 
+export interface richese_card {
+  id: string;
+  kind: "Richese";
+  type:
+    | "Karama"
+    | "Juice of Sappho"
+    | "Distrans"
+    | "Nullentropy Box"
+    | "Ornithopter"
+    | "Residual Poison"
+    | "Semuta Drug"
+    | "Portable Snooper"
+    | "Stone Burner"
+    | "Mirror Weapon";
+}
+
 export interface unknown_card_t {
   deck_index: number;
 }
 
-export type treachery_card_t = weapon_card | defence_card | useless_card | special_card | weapon_defense_card;
+export type treachery_card_t = weapon_card | defence_card | useless_card | special_card | weapon_defense_card | richese_card;
 
 const list_priorities: { [key in treachery_card_t["kind"]]: number } = {
   "Weapon/Defense": 0,
@@ -60,6 +76,7 @@ const list_priorities: { [key in treachery_card_t["kind"]]: number } = {
   Defense: 2,
   Special: 3,
   Useless: 4,
+  Richese: 5,
 };
 
 const list_weapon_priorities: { [key in weapon_card["type"]]: number } = {

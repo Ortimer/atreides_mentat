@@ -35,6 +35,11 @@ const TreacheryCardTag: React.FC<{ card: treachery_card_t; onDelete?: () => void
       text = card.type;
       break;
     }
+    case "Richese": {
+      icon = treachery_card_icons[card.kind](24);
+      text = card.type;
+      break;
+    }
   }
   return (
     <span className={"tag is-medium is-" + colour}>
