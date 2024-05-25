@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atreides_mentat/static/css/main.7594c2ae.css",
-    "main.js": "/atreides_mentat/static/js/main.c749c06f.js",
+    "main.js": "/atreides_mentat/static/js/main.c2032305.js",
     "static/media/fa-solid-900.ttf": "/atreides_mentat/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/atreides_mentat/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/fa-solid-900.woff2": "/atreides_mentat/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
@@ -34,10 +34,10 @@
     "static/media/crosshair.svg": "/atreides_mentat/static/media/crosshair.c1a3ce1ebbf6888a8b74c69bcbaaa7bc.svg",
     "static/media/poison_drop.svg": "/atreides_mentat/static/media/poison_drop.c66cd34d65d9fe2cbd395ca24fb37ad0.svg",
     "main.7594c2ae.css.map": "/atreides_mentat/static/css/main.7594c2ae.css.map",
-    "main.c749c06f.js.map": "/atreides_mentat/static/js/main.c749c06f.js.map"
+    "main.c2032305.js.map": "/atreides_mentat/static/js/main.c2032305.js.map"
   },
   "entrypoints": [
     "static/css/main.7594c2ae.css",
-    "static/js/main.c749c06f.js"
+    "static/js/main.c2032305.js"
   ]
 }
