@@ -9,7 +9,7 @@ Keep track of which treachery cards your opponents have, and which cards are lef
 - Uses the bulma framework for the CSS.
 - It's a progressive web app, so you should be able to install it to your mobile phone's homescreen - or use it in any browser.
 
-Hosted at https://ohgoditspotato.github.io/atreides_mentat/
+Hosted at https://ortimer.github.io/atreides_mentat/
 
 ### TODO
 - Add traitor tracker - should record which leaders for each faction are traitors, and who has the traitor
