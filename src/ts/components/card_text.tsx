@@ -1,7 +1,9 @@
 import * as React from "react";
 
 const BattlePlan = <p>Play as part of your Battle Plan.</p>;
+const BattlePlanInstead = <p>Play as part of your battle plan in place of a weapon or defense.</p>;
 const WinnerKeeps = <p>You may keep this card if you win this battle.</p>;
+const DiscardAfterUse = <p>Discard after use.</p>;
 const Special = <p className="heading">Special</p>;
 
 export const card_subheading = {
@@ -166,7 +168,9 @@ const card_text = {
       {BattlePlan}
       <p>Kills both leaders (no spice is paid for them).</p>
       <p>Both players may use Shields to protect their leader against the Artillery Strike.</p>
-      <p>Surviving (shielded) leaders do not count towards the battle total; the side that dialed higher wins the battle.</p>
+      <p>Surviving (shielded) leaders do not count towards the battle total; the side that dialed higher wins the
+        battle.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Poison Tooth": (
@@ -174,12 +178,14 @@ const card_text = {
       {BattlePlan}
       <p>Kills both leaders, and is not stopped by a Snooper</p>
       <p>After seeing the battle results, you may choose not to use this weapon.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Weirding Way": (
     <>
       {BattlePlan}
-      <p>Counts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile defense.</p>
+      <p>Counts as a projectile weapon, unless played with another weapon. In that case, it counts as a projectile
+        defense.</p>
       {WinnerKeeps}
     </>
   ),
@@ -207,14 +213,16 @@ const card_text = {
   "Amal": (
     <>
       <p>
-        At the beginning of any phase, cause all players to discard half of the spice behind their shields, rounded up, to the Spice Bank.
+        At the beginning of any phase, cause all players to discard half of the spice behind their shields, rounded up,
+        to the Spice Bank.
       </p>
     </>
   ),
   "Thumper": (
     <>
       <p>
-        Play at beginning of Spice Blow Phase instead of revealing the next Spice Blow card. Causes a Sandworm to appear.
+        Play at beginning of Spice Blow Phase instead of revealing the next Spice Blow card. Causes a Sandworm to
+        appear.
       </p>
       <p>
         Play proceeds as though Shai-Hulud has been revealed.
@@ -229,6 +237,41 @@ const card_text = {
       <p>
         Doubles the spice blow. Place double the amount of spice in the territory.
       </p>
+    </>
+  ),
+  "Harass & Withdraw": (
+    <>
+      {BattlePlanInstead}
+      <p>
+        Return undialed forces to your reserves, leader may still be killed.
+      </p>
+      <p>
+        Cancelled if traitor is called.
+      </p>
+      {DiscardAfterUse}
+    </>
+  ),
+  "Recruits": (
+    <>
+      <p>
+        Play during revival.
+      </p>
+      <p>
+        Double all factions free revival rates, revival limit is increased to 7.
+      </p>
+      {DiscardAfterUse}
+    </>
+  ),
+  "Reinforcements": (
+    <>
+      {BattlePlanInstead}
+      <p>
+        +2 to dialed number, then send 3 forces from your reserves to the tanks.
+      </p>
+      <p>
+        You must have at least 3 forces in the reserve to use this card.
+      </p>
+      {DiscardAfterUse}
     </>
   )
 } as const;

@@ -26,7 +26,8 @@ describe("common", () => {
       Moritani: false
     },
     deck_tracking: true,
-    include_expansion_cards: false
+    include_ixians_expansion_cards: false,
+    include_ecaz_expansion_cards: false
   };
 
   test("reset-game", () => {
@@ -55,7 +56,8 @@ describe("deck_tracking_on", () => {
       Moritani: false
     },
     deck_tracking: true,
-    include_expansion_cards: false,
+    include_ixians_expansion_cards: false,
+    include_ecaz_expansion_cards: false,
   };
   test("init-game", () => {
     const state = game_state_reducer(initial_game_state, start_game(spec));
@@ -161,7 +163,8 @@ describe("deck tracking off", () => {
       Moritani: false
     },
     deck_tracking: false,
-    include_expansion_cards: false,
+    include_ixians_expansion_cards: false,
+    include_ecaz_expansion_cards: false,
   };
   test("init-game", () => {
     const state = game_state_reducer(initial_game_state, start_game(spec));

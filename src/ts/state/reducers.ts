@@ -22,7 +22,8 @@ import { ENEMY_HOUSE_NAMES, house_name_t } from "ts/houses";
 import { game_history_t, game_state_t, houses_state_t, view_state_t } from "ts/state/types";
 import { card_sort, treachery_card_t } from "ts/treachery_card";
 import initial_deck from "ts/state/initial_deck";
-import expansion_deck from "ts/state/expansion_deck";
+import ixians_expansion_deck from "ts/state/ixians_expansion_deck";
+import ecaz_expansion_deck from "ts/state/ecaz_expansion_deck";
 
 export const initial_houses_state: houses_state_t = {
   Atreides: {
@@ -114,7 +115,8 @@ export const initial_houses_state: houses_state_t = {
 export const initial_game_state: game_state_t = {
   initialized: false,
   deck_tracking: true,
-  include_expansion_cards: false,
+  include_ixians_expansion_cards: false,
+  include_ecaz_expansion_cards: false,
   history: [],
   current: {
     decks: [
@@ -303,10 +305,18 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
 
     state.initialized = true;
     state.deck_tracking = action.payload.deck_tracking;
-    state.include_expansion_cards = action.payload.include_expansion_cards;
-    if (state.include_expansion_cards) {
+    state.include_ixians_expansion_cards = action.payload.include_ixians_expansion_cards;
+    if (state.include_ixians_expansion_cards) {
       const deck = history.decks[history.draw_deck_index];
-      for (let expansion_card of expansion_deck) {
+      for (let expansion_card of ixians_expansion_deck) {
+        deck.cards.push(expansion_card);
+      }
+    }
+
+    state.include_ecaz_expansion_cards = action.payload.include_ecaz_expansion_cards;
+    if (state.include_ecaz_expansion_cards) {
+      const deck = history.decks[history.draw_deck_index];
+      for (let expansion_card of ecaz_expansion_deck) {
         deck.cards.push(expansion_card);
       }
     }
@@ -318,7 +328,8 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
     if (state.deck_tracking) {
       return {
         initialized: state.initialized,
-        include_expansion_cards: state.include_expansion_cards,
+        include_ixians_expansion_cards: state.include_ixians_expansion_cards,
+        include_ecaz_expansion_cards: state.include_ecaz_expansion_cards,
         deck_tracking: false,
         current: {
           houses: state.current.houses,
@@ -326,7 +337,8 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
             {
               cards: [
                 ...initial_deck,
-                ...(state.include_expansion_cards ? expansion_deck : []),
+                ...(state.include_ixians_expansion_cards ? ixians_expansion_deck : []),
+                ...(state.include_ecaz_expansion_cards ? ecaz_expansion_deck : []),
               ].sort(card_sort),
               num_unknowns: 0,
             },

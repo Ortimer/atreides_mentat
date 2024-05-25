@@ -42,7 +42,10 @@ export interface special_card {
   | "Family Atomics"
   | "Harvester"
   | "Thumper"
-  | "Amal";
+  | "Amal"
+  | "Harass & Withdraw"
+  | "Recruits"
+  | "Reinforcements";
 }
 
 export interface unknown_card_t {

@@ -44,7 +44,8 @@ const NewGame =  () => {
       Moritani: false
     },
     deck_tracking: true,
-    include_expansion_cards: false
+    include_ixians_expansion_cards: false,
+    include_ecaz_expansion_cards: false
   });
 
   let allow_start = false;
@@ -80,17 +81,35 @@ const NewGame =  () => {
           <div className="columns is-vcentered">
             <div className="column">
               <button
-                className={"button is-large " + (state.include_expansion_cards ? "is-info" : "is-warning")}
-                onClick={() => setState({ ...state, include_expansion_cards: !state.include_expansion_cards })}
+                className={"button is-large " + (state.include_ixians_expansion_cards ? "is-info" : "is-warning")}
+                onClick={() => setState({
+                  ...state,
+                  include_ixians_expansion_cards: !state.include_ixians_expansion_cards,
+                })}
               >
-                {state.include_expansion_cards ? "Include expansion cards ON" : "Include expansion cards OFF"}
+                {state.include_ixians_expansion_cards ? "Include Ixians and Tleilaxu Treachery cards ON" : "Include Ixians and Tleilaxu Treachery cards OFF"}
               </button>
             </div>
             <p className="column">
-              Include the expansion treachery cards.
+              Include the Ixians and Tleilaxu expansion treachery cards.
             </p>
           </div>
-
+          <div className="columns is-vcentered">
+            <div className="column">
+              <button
+                className={"button is-large " + (state.include_ecaz_expansion_cards ? "is-info" : "is-warning")}
+                onClick={() => setState({
+                  ...state,
+                  include_ecaz_expansion_cards: !state.include_ecaz_expansion_cards,
+                })}
+              >
+                {state.include_ecaz_expansion_cards ? "Include Ecaz and Moritani Treachery cards ON" : "Include Ecaz and Moritani Treachery cards OFF"}
+              </button>
+            </div>
+            <p className="column">
+              Include the Ecaz and Moritani expansion treachery cards.
+            </p>
+          </div>
         </div>
       </section>
       <section className="section">

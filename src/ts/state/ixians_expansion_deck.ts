@@ -1,6 +1,6 @@
 import { treachery_card_t } from "ts/treachery_card";
 
-const expansion_deck: Array<treachery_card_t> = [
+const ixians_expansion_deck: Array<treachery_card_t> = [
   {
     id: "Artillery Strike",
     kind: "Weapon",
@@ -73,4 +73,4 @@ const expansion_deck: Array<treachery_card_t> = [
   }
 ];
 
-export default expansion_deck;
+export default ixians_expansion_deck;
