@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/atreides_mentat/static/css/main.7594c2ae.css",
-    "main.js": "/atreides_mentat/static/js/main.af6ae5f1.js",
+    "main.js": "/atreides_mentat/static/js/main.c749c06f.js",
     "static/media/fa-solid-900.ttf": "/atreides_mentat/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/atreides_mentat/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
     "static/media/fa-solid-900.woff2": "/atreides_mentat/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
-    "static/media/tleilaxu.png": "/atreides_mentat/static/media/tleilaxu.f469075bd055531c4c87.png",
     "static/media/fa-brands-400.woff2": "/atreides_mentat/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
-    "static/media/ixians.png": "/atreides_mentat/static/media/ixians.1bb1447987307acad0fe.png",
+    "static/media/ixians.png": "/atreides_mentat/static/media/ixians.ecfedf3b0519dff8142d.png",
+    "static/media/tleilaxu.png": "/atreides_mentat/static/media/tleilaxu.0bfdae72df48e3229632.png",
+    "static/media/ecaz.png": "/atreides_mentat/static/media/ecaz.33eda0c5e44d602cb602.png",
+    "static/media/moritani.png": "/atreides_mentat/static/media/moritani.29847c6f3e5d83e5ba99.png",
     "static/media/fa-regular-400.ttf": "/atreides_mentat/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/richese.png": "/atreides_mentat/static/media/richese.8f52d254defe509a2e8b.png",
+    "static/media/choam.png": "/atreides_mentat/static/media/choam.ba4d56a413ecbbfbaa8d.png",
     "service-worker.js": "/atreides_mentat/service-worker.js",
     "static/media/fa-regular-400.woff2": "/atreides_mentat/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/artillery.svg": "/atreides_mentat/static/media/artillery.aba82efbf08ea21684c4f5b206bf66e1.svg",
@@ -30,10 +34,10 @@
     "static/media/crosshair.svg": "/atreides_mentat/static/media/crosshair.c1a3ce1ebbf6888a8b74c69bcbaaa7bc.svg",
     "static/media/poison_drop.svg": "/atreides_mentat/static/media/poison_drop.c66cd34d65d9fe2cbd395ca24fb37ad0.svg",
     "main.7594c2ae.css.map": "/atreides_mentat/static/css/main.7594c2ae.css.map",
-    "main.af6ae5f1.js.map": "/atreides_mentat/static/js/main.af6ae5f1.js.map"
+    "main.c749c06f.js.map": "/atreides_mentat/static/js/main.c749c06f.js.map"
   },
   "entrypoints": [
     "static/css/main.7594c2ae.css",
-    "static/js/main.af6ae5f1.js"
+    "static/js/main.c749c06f.js"
   ]
 }
