@@ -1,25 +1,25 @@
-import { createReducer, combineReducers } from "@reduxjs/toolkit";
+import { combineReducers, createReducer } from "@reduxjs/toolkit";
 import {
-  house_add_card,
-  house_remove_card,
-  show_add_cards_modal,
-  start_game,
-  reset_game,
-  show_reset_game_modal,
   close_modal,
-  house_toggle_expand_cards,
-  house_add_unknown,
-  house_remove_unknown,
-  show_discard_unknown_modal,
-  undo_action,
-  show_assign_unknown_modal,
-  house_assign_unknown,
-  return_to_deck,
   disable_deck_tracking,
+  house_add_card,
+  house_add_unknown,
+  house_assign_unknown,
+  house_remove_card,
+  house_remove_unknown,
+  house_toggle_expand_cards,
+  reset_game,
+  return_to_deck,
+  show_add_cards_modal,
+  show_assign_unknown_modal,
   show_disable_tracking_modal,
+  show_discard_unknown_modal,
+  show_reset_game_modal,
+  start_game,
+  undo_action,
 } from "ts/state/actions";
 import { ENEMY_HOUSE_NAMES, house_name_t } from "ts/houses";
-import { houses_state_t, view_state_t, game_state_t, game_history_t } from "ts/state/types";
+import { game_history_t, game_state_t, houses_state_t, view_state_t } from "ts/state/types";
 import { card_sort, treachery_card_t } from "ts/treachery_card";
 import initial_deck from "ts/state/initial_deck";
 import expansion_deck from "ts/state/expansion_deck";
@@ -81,6 +81,34 @@ export const initial_houses_state: houses_state_t = {
     show_cards: false,
     unknown_cards: [{ deck_index: 0 }],
   },
+  CHOAM: {
+    active: false,
+    cards: [],
+    name: "CHOAM",
+    show_cards: false,
+    unknown_cards: [{ deck_index: 0 }],
+  },
+  Richese: {
+    active: false,
+    cards: [],
+    name: "Richese",
+    show_cards: false,
+    unknown_cards: [{ deck_index: 0 }],
+  },
+  Ecaz: {
+    active: false,
+    cards: [],
+    name: "Ecaz",
+    show_cards: false,
+    unknown_cards: [{ deck_index: 0 }],
+  },
+  Moritani: {
+    active: false,
+    cards: [],
+    name: "Moritani",
+    show_cards: false,
+    unknown_cards: [{ deck_index: 0 }],
+  }
 };
 
 export const initial_game_state: game_state_t = {

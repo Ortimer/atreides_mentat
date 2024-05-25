@@ -8,6 +8,10 @@ import { ReactComponent as HarkonnenIcon } from "assets/houses/harkonnen.svg";
 import { ReactComponent as GuildIcon } from "assets/houses/spacing_guild.svg";
 import ixianPng from "assets/houses/ixians.png";
 import tleilaxuPng from "assets/houses/tleilaxu.png";
+import choamPng from "assets/houses/choam.png";
+import richesePng from "assets/houses/richese.png";
+import ecazPng from "assets/houses/ecaz.png";
+import moritaniPng from "assets/houses/moritani.png";
 
 export const icon_map = {
   Atreides: <AtreidesIcon />,
@@ -18,6 +22,10 @@ export const icon_map = {
   "Spacing Guild": <GuildIcon />,
   Ixians: <img src={ixianPng} alt="ixian icon" />,
   Tleilaxu: <img src={tleilaxuPng} alt="tleilaxu icon" />,
+  CHOAM: <img src={choamPng} alt="choam icon" />,
+  Richese: <img src={richesePng} alt="richese icon" />,
+  Ecaz: <img src={ecazPng} alt="ecaz icon" />,
+  Moritani: <img src={moritaniPng} alt="moritani icon" />,
 };
 
 export const HouseNameWithIcon: React.FC<{ house: house_name_t }> = ({ house }) => {

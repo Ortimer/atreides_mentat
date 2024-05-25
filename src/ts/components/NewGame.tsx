@@ -37,7 +37,11 @@ const NewGame =  () => {
       "Bene Gesserit": false,
       Fremen: false,
       Ixians: false,
-      Tleilaxu: false
+      Tleilaxu: false,
+      CHOAM: false,
+      Richese: false,
+      Ecaz: false,
+      Moritani: false
     },
     deck_tracking: true,
     include_expansion_cards: false

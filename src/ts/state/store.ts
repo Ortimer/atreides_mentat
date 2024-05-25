@@ -49,6 +49,48 @@ const migrations = {
       },
     };
   },
+  6: (state: any) => {
+    return {
+      ...state,
+      game: {
+        ...state.game,
+        history: [],
+        include_expansion_cards: false,
+        current: {
+          ...state.game.current,
+          houses: {
+            ...state.game.current.houses,
+            Ixians: initial_houses_state.Ixians,
+            Tleilaxu: initial_houses_state.Tleilaxu,
+            CHOAM: initial_houses_state.CHOAM,
+            Richese: initial_houses_state.Richese,
+          },
+        },
+      },
+    };
+  },
+  7: (state: any) => {
+    return {
+      ...state,
+      game: {
+        ...state.game,
+        history: [],
+        include_expansion_cards: false,
+        current: {
+          ...state.game.current,
+          houses: {
+            ...state.game.current.houses,
+            Ixians: initial_houses_state.Ixians,
+            Tleilaxu: initial_houses_state.Tleilaxu,
+            CHOAM: initial_houses_state.CHOAM,
+            Richese: initial_houses_state.Richese,
+            Ecaz: initial_houses_state.Ecaz,
+            Moritani: initial_houses_state.Moritani,
+          },
+        },
+      },
+    };
+  },
 };
 
 const persistConfig = {
@@ -56,7 +98,7 @@ const persistConfig = {
   storage: storage,
   stateReconciler: autoMergeLevel2,
   migrate: createMigrate(migrations),
-  version: 5,
+  version: 7,
 };
 
 const pReducer = persistReducer<root_state_t>(persistConfig, root_reducer);

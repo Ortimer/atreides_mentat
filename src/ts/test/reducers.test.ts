@@ -19,7 +19,11 @@ describe("common", () => {
       Emperor: false,
       Harkonnen: false,
       Ixians: false,
-      Tleilaxu: false
+      Tleilaxu: false,
+      CHOAM: false,
+      Richese: false,
+      Ecaz: false,
+      Moritani: false
     },
     deck_tracking: true,
     include_expansion_cards: false
@@ -44,7 +48,11 @@ describe("deck_tracking_on", () => {
       Emperor: false,
       Harkonnen: false,
       Ixians: false,
-      Tleilaxu: false
+      Tleilaxu: false,
+      CHOAM: false,
+      Richese: false,
+      Ecaz: false,
+      Moritani: false
     },
     deck_tracking: true,
     include_expansion_cards: false,
@@ -147,6 +155,10 @@ describe("deck tracking off", () => {
       Harkonnen: false,
       Ixians: false,
       Tleilaxu: false,
+      CHOAM: false,
+      Richese: false,
+      Ecaz: false,
+      Moritani: false
     },
     deck_tracking: false,
     include_expansion_cards: false,
