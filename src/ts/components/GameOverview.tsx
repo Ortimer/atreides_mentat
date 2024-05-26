@@ -36,6 +36,7 @@ const GameOverview: React.FC = () => {
         deck_tracking: state.game.deck_tracking,
         include_ixians_expansion_cards: state.game.include_ixians_expansion_cards,
         include_ecaz_expansion_cards: state.game.include_ecaz_expansion_cards,
+        richese_is_playing: state.game.current.houses.Richese.active,
         houses: state.game.current.houses,
         view: state.view,
         draw_deck,

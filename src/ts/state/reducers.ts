@@ -24,6 +24,7 @@ import { card_sort, treachery_card_t } from "ts/treachery_card";
 import initial_deck from "ts/state/initial_deck";
 import ixians_expansion_deck from "ts/state/ixians_expansion_deck";
 import ecaz_expansion_deck from "ts/state/ecaz_expansion_deck";
+import richese_deck from "./richese_deck";
 
 export const initial_houses_state: houses_state_t = {
   Atreides: {
@@ -117,6 +118,7 @@ export const initial_game_state: game_state_t = {
   deck_tracking: true,
   include_ixians_expansion_cards: false,
   include_ecaz_expansion_cards: false,
+  richese_is_playing: false,
   history: [],
   current: {
     decks: [
@@ -321,6 +323,13 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
       }
     }
 
+    if (action.payload.houses["Richese"]) {
+      const deck = history.decks[history.draw_deck_index];
+      for (let expansion_card of richese_deck) {
+        deck.cards.push(expansion_card);
+      }
+    }
+
     state.current.decks[state.current.draw_deck_index].cards.sort(card_sort);
   });
 
@@ -330,6 +339,7 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
         initialized: state.initialized,
         include_ixians_expansion_cards: state.include_ixians_expansion_cards,
         include_ecaz_expansion_cards: state.include_ecaz_expansion_cards,
+        richese_is_playing: state.richese_is_playing,
         deck_tracking: false,
         current: {
           houses: state.current.houses,
@@ -339,6 +349,7 @@ export const game_state_reducer = createReducer(initial_game_state, builder => {
                 ...initial_deck,
                 ...(state.include_ixians_expansion_cards ? ixians_expansion_deck : []),
                 ...(state.include_ecaz_expansion_cards ? ecaz_expansion_deck : []),
+                ...(state.richese_is_playing ? richese_deck : []),
               ].sort(card_sort),
               num_unknowns: 0,
             },

@@ -36,7 +36,7 @@ const TreacheryCardTag: React.FC<{ card: treachery_card_t; onDelete?: () => void
       break;
     }
     case "Richese": {
-      icon = treachery_card_icons[card.kind](24);
+      icon = treachery_card_icons["Richese"](24);
       text = card.type;
       break;
     }

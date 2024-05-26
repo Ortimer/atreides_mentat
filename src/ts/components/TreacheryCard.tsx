@@ -21,7 +21,7 @@ export const treachery_card_colours = {
   Useless: { text: "black", bg: "warning" },
   Unknown: { text: "white", bg: "dark" },
   "Weapon/Defense": { text: "white", bg: "success" },
-  Richese: { text: "black", bg: "grey-light" },
+  Richese: { text: "black", bg: "info" },
 } as const;
 
 export const treachery_card_icons = {
@@ -39,14 +39,14 @@ export const treachery_card_icons = {
   Chemistry: (width?: number) => <SnooperIcon width={width ? width : 32} />,
   "Poison Blade": (width?: number) => <CrosshairIcon width={width ? width : 32} />,
   "Shield Snooper": (width?: number) => <ShieldIcon width={width ? width : 32} />,
-  Richese: (width?: number) => <RicheseIcon width={width ? width : 32} />,
+  "Richese": (width?: number) => <RicheseIcon width={width ? width : 32} />,
 } as const;
 
 export const treachery_card_extra_icons = {
   "Weirding Way": (width?: number) => <ShieldIcon width={width ? width : 32} />,
   "Chemistry": (width?: number) => <PoisonDropIcon width={width ? width : 32} />,
   "Poison Blade": (width?: number) => <PoisonDropIcon width={width ? width : 32} />,
-  "Shield Snooper": (width?: number) => <SnooperIcon width={width ? width : 32} />
+  "Shield Snooper": (width?: number) => <SnooperIcon width={width ? width : 32} />,
 } as any;
 
 const TreacheryCard: React.FC<{
@@ -98,8 +98,8 @@ const TreacheryCard: React.FC<{
       break;
     }
     case "Richese": {
-      subheading = card_subheading[card.kind];
-      icon = treachery_card_icons[card.kind]();
+      subheading = card_subheading.Richese;
+      icon = treachery_card_icons["Richese"]();
       text = card_text[card.type];
       title = card.id;
       break;

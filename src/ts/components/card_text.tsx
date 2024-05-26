@@ -277,65 +277,66 @@ const card_text = {
   ),
   "Juice of Sappho": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Choose one:</p>
+      <p>Play this card to the considered the aggresor in a battle, or</p>
+      <p>Go first for any phase or action that require turn order, or</p>
+      <p>Go last for any phase or action that require turn order</p>
+      {DiscardAfterUse}
     </>
   ),
   "Distrans": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Give another player a Treachery Card from your hand (If that player hand it's not full)</p>
+      <p>Play at any time (Other than during a bid).</p>
+      {DiscardAfterUse}
     </>
   ),
   "Nullentropy Box": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>At any time, pay 2 spice to the bank, then get any card from the discard.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Ornithopter": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Play to move one of your groups 3 spaces or to move 2 different groups normally</p>
+      {DiscardAfterUse}
     </>
   ),
   "Residual Poison": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Play on an opponent before choosing leaders in battle, kill one random leader.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Semuta Drug": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Get another treachery before it gets discarded and add it to your hand.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Portable Snooper": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Defense - Poison</p>
+      <p>Protects against Poison, may be played after revealing battle plan.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Stone Burner": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Weapon - Special</p>
+      <p>You choose after battle plans are revealed:</p>
+      <p>Both leaders are killed, OR leaders don't add to strength to this battle.</p>
+      <p>In either case, the player with the higher number of undialed force tokens wins.</p>
+      {DiscardAfterUse}
     </>
   ),
   "Mirror Weapon": (
     <>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p>Weapon - Special</p>
+      {BattlePlan}
+      <p>Copies opponents weapon</p>
+      {DiscardAfterUse}
     </>
   )
 } as const;

@@ -87,7 +87,7 @@ const NewGame =  () => {
                   include_ixians_expansion_cards: !state.include_ixians_expansion_cards,
                 })}
               >
-                {state.include_ixians_expansion_cards ? "Include Ixians and Tleilaxu Treachery cards ON" : "Include Ixians and Tleilaxu Treachery cards OFF"}
+                {state.include_ixians_expansion_cards ? "Ixians and Tleilaxu ON" : "Ixians and Tleilaxu OFF"}
               </button>
             </div>
             <p className="column">
@@ -103,7 +103,7 @@ const NewGame =  () => {
                   include_ecaz_expansion_cards: !state.include_ecaz_expansion_cards,
                 })}
               >
-                {state.include_ecaz_expansion_cards ? "Include Ecaz and Moritani Treachery cards ON" : "Include Ecaz and Moritani Treachery cards OFF"}
+                {state.include_ecaz_expansion_cards ? "Ecaz and Moritani ON" : "Ecaz and Moritani OFF"}
               </button>
             </div>
             <p className="column">

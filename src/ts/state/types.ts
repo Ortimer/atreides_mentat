@@ -54,6 +54,7 @@ export interface game_state_t {
   deck_tracking: boolean;
   include_ixians_expansion_cards: boolean;
   include_ecaz_expansion_cards: boolean;
+  richese_is_playing: boolean;
   history: Array<game_history_t>;
   current: game_history_t;
   // keep a record of every change the player makes, so they can revert any action.

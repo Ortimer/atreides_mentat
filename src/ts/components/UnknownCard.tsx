@@ -25,15 +25,20 @@ const UnknownCard: React.FC<{
    [key: string]: Array<any>;
   };
   let cardCounter:CardCounter = {};
+  let deckSize:number = 0;
 
   for (let i = 0; i < deck.cards.length; i++) {
     const card = deck.cards[i];
     var key;
-    if (card.kind === "Useless" || card.kind === "Special") {
+    if (card.kind === "Useless" || card.kind === "Special" || card.kind === "Richese") {
       key = card.kind;
     } else {
       key = card.type;
     }
+    if (card.kind != "Richese") {
+      deckSize++;
+    }
+
     let tempCards = cardCounter[key] ? cardCounter[key] : [];
     tempCards.push(card);
     cardCounter[key] = tempCards;
@@ -56,10 +61,17 @@ const UnknownCard: React.FC<{
     if (!colour_key) {
       colour_key = "Special";
     }
+    let chance: String;
+    if (label == "Richese") {
+      chance = "??"
+    } else {
+      chance = String(Math.round((val * 100) / deckSize));
+    }
+
     return (
       <div className="column full-tag">
         <span className={"tag is-medium is-" + treachery_card_colours[colour_key].bg}>
-          {label} {Math.round((val * 100) / deck.cards.length)}%
+          {label} {chance}%
         </span>
       </div>
     );
