@@ -35,7 +35,7 @@ const UnknownCard: React.FC<{
     } else {
       key = card.type;
     }
-    if (card.kind != "Richese") {
+    if (card.kind !== "Richese") {
       deckSize++;
     }
 
@@ -62,7 +62,7 @@ const UnknownCard: React.FC<{
       colour_key = "Special";
     }
     let chance: String;
-    if (label == "Richese") {
+    if (label === "Richese") {
       chance = "??"
     } else {
       chance = String(Math.round((val * 100) / deckSize));
